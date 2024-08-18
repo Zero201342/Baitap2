@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm hiểu các thẻ HTML cơ bản</title>
+</head>
+<body>
+    <h1>Tìm hiểu các thẻ HTML cơ bản</h1>
+
+   <!-- HTML Basic -->
+<h2>1. HTML Basic</h2>
+<p>Thẻ <code>&lt;html&gt;</code> định nghĩa cấu trúc chính của tài liệu HTML. Nó bao bọc toàn bộ nội dung của trang web, bao gồm cả phần <code>&lt;head&gt;</code> và <code>&lt;body&gt;</code>.</p>
+
+<p><strong>Thẻ &lt;html&gt;</strong>: Đây là thẻ gốc của tài liệu HTML. Mọi nội dung của trang web đều nằm bên trong thẻ này. Nó giúp trình duyệt nhận biết rằng tài liệu này là một trang web HTML.</p>
+
+<p><strong>Thẻ &lt;head&gt;</strong>: Thẻ này chứa các thông tin meta, tiêu đề của trang, và các liên kết đến tài nguyên bên ngoài như CSS hoặc JavaScript. Thông tin trong thẻ <code>&lt;head&gt;</code> không hiển thị trực tiếp trên trang web.</p>
+
+<p><strong>Thẻ &lt;title&gt;</strong>: Thẻ này xác định tiêu đề của trang web, được hiển thị trên thanh tiêu đề của trình duyệt hoặc tab của trang.</p>
+
+<p><strong>Thẻ &lt;body&gt;</strong>: Thẻ này chứa toàn bộ nội dung hiển thị trên trang web, bao gồm các tiêu đề, đoạn văn, hình ảnh, liên kết, và các phần tử khác. Đây là phần mà người dùng nhìn thấy khi truy cập trang web.</p>
+
+<p>Ví dụ:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Web của Lê Trung Hiếu&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Chào mừng đến với trang web của tôi!&lt;/h1&gt;
+    &lt;p&gt;Đây là HTML Basic!&lt;/p&gt;
+    &lt;a href="https://daotao.hnmu.edu.vn/"&gt;Truy cập HNMU&lt;/a&gt;
+    &lt;img src="https://th.bing.com/th/id/OIP.vzEZZHEmBJ6qsHlWBUqCFwAAAA?rs=1&pid=ImgDetMain" alt="Hình ảnh minh họa"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+<p><strong>Thẻ &lt;a&gt;</strong>: Thẻ này được sử dụng để tạo liên kết đến các trang web khác hoặc các phần của trang web hiện tại. Trong ví dụ, thẻ <code>&lt;a href="https://www.example.com"&gt;</code> tạo một liên kết đến trang web <a href="https://www.example.com" target="_blank">Example.com</a>.</p>
+
+<p><strong>Thẻ &lt;img&gt;</strong>: Thẻ này được sử dụng để chèn hình ảnh vào trang web. Trong ví dụ, thẻ <code>&lt;img src="https://via.placeholder.com/150" alt="Hình ảnh minh họa"&gt;</code> chèn một hình ảnh từ URL và cung cấp một mô tả thay thế nếu hình ảnh không thể tải được.</p>
+
+<p><strong>Thẻ &lt;h1&gt;</strong>: Thẻ này xác định tiêu đề chính của trang. Các tiêu đề từ <code>&lt;h1&gt;</code> đến <code>&lt;h6&gt;</code> được sử dụng để phân cấp nội dung và giúp SEO.</p>
+
+<p><strong>Thẻ &lt;p&gt;</strong>: Thẻ này được sử dụng để tạo đoạn văn. Nó thường được sử dụng để nhóm các câu hoặc đoạn văn bản thành các khối văn bản dễ đọc.</p>
+
+<p>Ví dụ khác về cách sử dụng các thẻ cơ bản trong HTML:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Trang Web Cơ Bản&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Tiêu Đề Chính&lt;/h1&gt;
+    &lt;h2&gt;Tiêu Đề Phụ&lt;/h2&gt;
+    &lt;p&gt;Đây là một đoạn văn bản đơn giản.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Danh mục 1&lt;/li&gt;
+        &lt;li&gt;Danh mục 2&lt;/li&gt;
+        &lt;li&gt;Danh mục 3&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Số 1&lt;/li&gt;
+        &lt;li&gt;Số 2&lt;/li&gt;
+        &lt;li&gt;Số 3&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;img src="https://via.placeholder.com/100" alt="Hình ảnh mẫu"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+<p><strong>Thẻ &lt;ul&gt;</strong> và <strong>&lt;ol&gt;</strong>: Thẻ &lt;ul&gt; tạo danh sách không thứ tự, trong khi <strong>&lt;ol&gt;</strong> tạo danh sách có thứ tự. Các mục trong danh sách được đặt bên trong thẻ &lt;li&gt;.</p>
+
+<p><strong>Thẻ &lt;meta&gt;</strong>: Thẻ này cung cấp thông tin meta về tài liệu, chẳng hạn như mã hóa ký tự trong ví dụ này (UTF-8).</p>
+
+
+    <!-- HTML Attributes -->
+<h2>1. HTML Attributes</h2>
+<p>Các thuộc tính HTML cung cấp thông tin bổ sung cho các phần tử HTML. Chúng giúp xác định hành vi và cách trình bày của các phần tử. Một số thuộc tính thường dùng bao gồm:</p>
+<ul>
+    <li><code>href</code>: Chỉ định URL mà liên kết sẽ trỏ tới. Thường được sử dụng trong thẻ <code>&lt;a&gt;</code> để tạo liên kết đến các trang web khác.</li>
+    <li><code>src</code>: Chỉ định đường dẫn tới tài nguyên bên ngoài, ví dụ như hình ảnh, video, hoặc âm thanh. Thường được sử dụng trong thẻ <code>&lt;img&gt;</code> để chèn hình ảnh.</li>
+    <li><code>alt</code>: Cung cấp mô tả thay thế cho hình ảnh nếu hình ảnh không thể tải được. Thường được sử dụng trong thẻ <code>&lt;img&gt;</code> để cải thiện khả năng truy cập và SEO.</li>
+    <li><code>target</code>: Xác định nơi mà liên kết sẽ được mở. Ví dụ, giá trị <code>_blank</code> mở liên kết trong một cửa sổ hoặc tab mới.</li>
+    <li><code>width</code> và <code>height</code>: Xác định kích thước của hình ảnh hoặc phần tử khác. Thường được sử dụng trong thẻ <code>&lt;img&gt;</code> để điều chỉnh kích thước hình ảnh.</li>
+</ul>
+
+<p>Ví dụ minh họa:</p>
+<pre><code>
+&lt;a href="https://www.youtube.com/" target="_blank"&gt;Truy cập Youtube&lt;/a&gt;
+&lt;img src="https://i.pinimg.com/736x/ec/9f/f2/ec9ff279976d55e21b09a6f2a646de10.jpg" alt="Hình ảnh minh họa" width="300"&gt;
+</code></pre>
+
+<p><strong>Giải thích các thuộc tính:</strong></p>
+<p><strong>Thẻ &lt;a&gt;:</strong> Thẻ này tạo liên kết đến một URL. Trong ví dụ, thuộc tính <code>href</code> chỉ định địa chỉ URL của Youtube, và thuộc tính <code>target</code> với giá trị <code>_blank</code> mở liên kết trong một cửa sổ hoặc tab mới.</p>
+<p><strong>Thẻ &lt;img&gt;:</strong> Thẻ này được sử dụng để chèn hình ảnh vào trang web. Trong ví dụ, thuộc tính <code>src</code> chỉ định đường dẫn đến hình ảnh, thuộc tính <code>alt</code> cung cấp mô tả thay thế cho hình ảnh, và thuộc tính <code>width</code> xác định độ rộng của hình ảnh (300 pixel).</p>
+
+<p>Ví dụ bổ sung:</p>
+<pre><code>
+&lt;a href="https://www.youtube.com/watch?v=pdZgz19KkiA" title="Truy cập Youtube.com"&gt;Truy cập Example.com&lt;/a&gt;
+&lt;img src="https://th.bing.com/th/id/OSK.HERO63zKoSQdje1DN-RalyqXlAgxBa2shJpd-Yg-z38KGPw?rs=1&pid=ImgDetMain" alt="Hình ảnh mẫu" height="150" style="border: 1px solid #000"&gt;
+</code></pre>
+
+<p><strong>Thẻ &lt;a&gt; với thuộc tính <code>title</code>:</strong> Thuộc tính <code>title</code> cung cấp thông tin bổ sung về liên kết khi người dùng di chuột qua nó. Trong ví dụ, khi người dùng di chuột qua liên kết đến Example.com, một gợi ý nhỏ sẽ xuất hiện với văn bản "Truy cập Example.com".</p>
+
+<p><strong>Thẻ &lt;img&gt; với thuộc tính <code>style</code>:</strong> Thuộc tính <code>style</code> cho phép bạn áp dụng các kiểu CSS trực tiếp cho phần tử. Trong ví dụ, thuộc tính <code>style</code> được sử dụng để thêm viền đen quanh hình ảnh.</p>
+
+    <!-- HTML Headings -->
+<h2>3. HTML Headings</h2>
+<p>Thẻ tiêu đề <code>&lt;h1&gt;</code> đến <code>&lt;h6&gt;</code> được sử dụng để tạo các tiêu đề có thứ bậc khác nhau. Thẻ <code>&lt;h1&gt;</code> là tiêu đề lớn nhất và quan trọng nhất, trong khi <code>&lt;h6&gt;</code> là tiêu đề nhỏ nhất. Các thẻ tiêu đề giúp cấu trúc nội dung của trang web và cải thiện khả năng đọc và SEO.</p>
+
+<p><strong>Ví dụ:</strong></p>
+<pre><code>
+&lt;h1&gt;Bài tập về nhà&lt;/h1&gt;
+&lt;h4&gt;Mã lớp học phần&lt;/h4&gt;
+&lt;h6&gt;Thông tin lớp học&lt;/h6&gt;
+</code></pre>
+
+<p><strong>Giải thích:</strong></p>
+<p><strong>Thẻ &lt;h1&gt;</strong>: Đây là tiêu đề quan trọng nhất và lớn nhất. Thường được sử dụng cho tiêu đề chính của trang hoặc bài viết. Trong ví dụ, <code>&lt;h1&gt;Bài tập về nhà&lt;/h1&gt;</code> sẽ tạo ra một tiêu đề lớn và nổi bật.</p>
+
+<p><strong>Thẻ &lt;h2&gt;</strong>: Tiêu đề cấp 2, thường được sử dụng cho các tiêu đề phụ của phần nội dung chính. Ví dụ, nếu bạn có một bài viết dài, các phần chính của bài viết có thể được đánh dấu bằng <code>&lt;h2&gt;</code>.</p>
+
+<p><strong>Thẻ &lt;h3&gt;</strong>: Tiêu đề cấp 3, thường dùng cho tiêu đề trong các phần hoặc mục con của tiêu đề cấp 2.</p>
+
+<p><strong>Thẻ &lt;h4&gt;</strong>: Tiêu đề cấp 4, được sử dụng cho các tiêu đề con của tiêu đề cấp 3. Ví dụ, <code>&lt;h4&gt;Mã lớp học phần&lt;/h4&gt;</code> sẽ tạo một tiêu đề nhỏ hơn nhưng vẫn quan trọng hơn so với tiêu đề cấp 5 và 6.</p>
+
+<p><strong>Thẻ &lt;h5&gt;</strong> và <strong>&lt;h6&gt;</strong>: Các tiêu đề cấp 5 và 6 được sử dụng cho các tiêu đề con nhỏ hơn nữa, ví dụ, <code>&lt;h6&gt;Thông tin lớp học&lt;/h6&gt;</code> tạo một tiêu đề nhỏ nhất trong ví dụ này.</p>
+
+<p>Việc sử dụng các thẻ tiêu đề đúng cách giúp cải thiện cấu trúc trang web của bạn, làm cho nội dung dễ đọc hơn và giúp các công cụ tìm kiếm hiểu rõ hơn về nội dung của trang. Dưới đây là ví dụ về cách sử dụng các thẻ tiêu đề trong một cấu trúc bài viết:</p>
+<pre><code>
+&lt;h1&gt;Hướng Dẫn Sử Dụng HTML&lt;/h1&gt;
+&lt;h2&gt;Giới thiệu&lt;/h2&gt;
+&lt;p&gt;HTML là ngôn ngữ đánh dấu chính để xây dựng trang web.&lt;/p&gt;
+&lt;h2&gt;Các Thẻ HTML Cơ Bản&lt;/h2&gt;
+&lt;h3&gt;Thẻ &lt;html&gt;&lt;/h3&gt;
+&lt;p&gt;Thẻ &lt;html&gt; bao bọc toàn bộ nội dung của trang web.&lt;/p&gt;
+&lt;h3&gt;Thẻ &lt;head&gt;&lt;/h3&gt;
+&lt;p&gt;Thẻ &lt;head&gt; chứa thông tin meta và tiêu đề của trang.&lt;/p&gt;
+&lt;h2&gt;Tổng Kết&lt;/h2&gt;
+&lt;p&gt;Sử dụng các thẻ tiêu đề giúp cải thiện cấu trúc và khả năng đọc của trang web.&lt;/p&gt;
+</code></pre>
+
+<p>Trong ví dụ trên, thẻ &lt;h1&gt; được sử dụng cho tiêu đề chính của bài viết, và thẻ &lt;h2&gt; và &lt;h3&gt; được sử dụng cho các tiêu đề phụ và các mục con để tổ chức nội dung một cách rõ ràng và có thứ bậc.</p>
+<p>Ví dụ:</p>
+<h1>Hướng Dẫn Sử Dụng Ứng Dụng App</h1>
+<h2>Giới Thiệu</h2>
+<p>Ứng dụng giúp bạn quản lý thời gian hiệu quả hơn.</p>
+
+<h2>Cài Đặt Ứng Dụng</h2>
+<h3>1. Tải Xuống Ứng Dụng</h3>
+<p>Truy cập AppStore hoặc CH Play tải xuống ứng dụng.</p>
+
+<h3>2. Cài Đặt Ứng Dụng</h3>
+<p>Mở app và xác nhận ứng dụng</p>
+
+<h2>Hướng Dẫn Sử Dụng</h2>
+<h3>1. Đăng Nhập</h3>
+<p>Nhập thông tin đăng nhập của bạn để vào ứng dụng.</p>
+
+<h3>2. Tạo tài khoản mới</h3>
+<p>Nhấn vào nút "Đăng ký" và nhập chi tiết thông tin</p>
+
+<h2>Liên Hệ Hỗ Trợ</h2>
+<p>Nếu bạn gặp vấn đề, hãy liên hệ với chúng tôi qua email hỗ trợ: <a href="mailto:tulenhtaungam2025@gmail.com">tulenhtaungam2025@gmail.com</a>.</p>
+
+
+    <!-- HTML Paragraphs -->
+<h2>4. HTML Paragraphs</h2>
+<p>Thẻ <code>&lt;p&gt;</code> dùng để định nghĩa một đoạn văn bản trong HTML. Đây là cách cơ bản để phân chia và tổ chức văn bản trên trang web, giúp cải thiện khả năng đọc và tạo sự phân cách rõ ràng giữa các đoạn văn.</p>
+
+<p>Thẻ <code>&lt;p&gt;</code> sẽ tự động tạo khoảng cách phía trên và dưới đoạn văn bản, giúp các đoạn văn không bị dính liền với nhau.</p>
+
+<p><strong>Ví dụ:</strong></p>
+<pre><code>
+    &lt;p&gt;Tấm Cám là một câu chuyện cổ tích nổi tiếng trong văn hóa Việt Nam. Câu chuyện kể về một cô gái hiền lành và xinh đẹp tên là Tấm, người đã phải chịu đựng sự đối xử bất công từ người mẹ kế và các chị em của bà. Tuy nhiên, nhờ vào lòng tốt và sự kiên trì của mình, Tấm đã vượt qua mọi khó khăn và cuối cùng tìm thấy hạnh phúc.&lt;/p&gt;
+    
+    &lt;p&gt;Ngày xưa, Tấm sống với mẹ kế và hai chị em của bà trong một ngôi nhà nhỏ. Mẹ kế của Tấm rất nghiệt ngã và thường xuyên ra lệnh cho Tấm làm tất cả công việc nhà. Tấm không bao giờ kêu ca mà luôn làm việc chăm chỉ và đối xử tốt với mọi người xung quanh.&lt;/p&gt;
+    
+    &lt;p&gt;Một ngày nọ, khi Tấm đang làm việc ở vườn, cô tìm thấy một con cá và quyết định mang nó về nhà để nấu ăn. Tuy nhiên, khi đến nhà, cô phát hiện ra rằng mẹ kế và các chị em của bà đã ăn thịt con cá đó mà không cho Tấm biết. Tấm rất buồn, nhưng cô vẫn tiếp tục sống cuộc sống của mình với sự kiên nhẫn và lòng tốt.&lt;/p&gt;
+    
+    &lt;p&gt;Cuối cùng, nhờ vào sự giúp đỡ của một bà tiên, Tấm đã có cơ hội tham gia lễ hội và gặp được một hoàng tử. Hoàng tử bị thu hút bởi vẻ đẹp và phẩm hạnh của Tấm. Sau nhiều thử thách và khó khăn, Tấm và hoàng tử đã kết hôn và sống hạnh phúc mãi mãi.&lt;/p&gt;
+    </code></pre>
+    
+    <p>Trong ví dụ trên, mỗi đoạn văn được bao bọc bởi thẻ <code>&lt;p&gt;</code> để tạo sự phân cách rõ ràng giữa các phần của câu chuyện. Việc sử dụng thẻ <code>&lt;p&gt;</code> giúp trình bày nội dung một cách có tổ chức và dễ đọc hơn trên trang web.</p>
+    
+    <p><strong>Chú ý:</strong> Đoạn văn sẽ được trình bày với khoảng cách phía trên và dưới tự động, giúp bạn không phải thêm khoảng trắng hoặc sử dụng thẻ <code>&lt;br&gt;</code> để tạo khoảng cách. Điều này giúp duy trì sự đồng nhất và dễ đọc trong văn bản.</p>
+    
+    <p>Trong ví dụ trên, mỗi đoạn văn được bao bọc bởi thẻ <code>&lt;p&gt;</code> để tạo sự phân cách rõ ràng giữa các phần của câu chuyện. Việc sử dụng thẻ <code>&lt;p&gt;</code> giúp trình bày nội dung một cách có tổ chức và dễ đọc hơn trên trang web.</p>
+    
+    <p><strong>Chú ý:</strong> Đoạn văn sẽ được trình bày với khoảng cách phía trên và dưới tự động, giúp bạn không phải thêm khoảng trắng hoặc sử dụng thẻ <code>&lt;br&gt;</code> để tạo khoảng cách. Điều này giúp duy trì sự đồng nhất và dễ đọc trong văn bản.</p>
+
+</code></pre>
+
+<p><strong>Giải thích:</strong></p>
+<p><strong>Thẻ &lt;p&gt;</strong>: Được sử dụng để bao bọc văn bản của một đoạn. Mỗi thẻ &lt;p&gt; sẽ tạo ra một đoạn văn mới và tự động thêm khoảng cách phía trên và dưới đoạn văn đó.</p>
+<p><strong>Chú ý:</strong></p>
+<ul>
+    <li>Không nên sử dụng thẻ &lt;p&gt; để tạo khoảng cách giữa các phần tử khác nhau. Để tạo khoảng cách, bạn nên sử dụng CSS để kiểm soát cách trình bày.</li>
+    <li>Thẻ &lt;p&gt; sẽ tự động tách các đoạn văn bằng cách thêm khoảng cách, vì vậy bạn không cần thêm các thẻ <code>&lt;br&gt;</code> hay khoảng trắng để phân cách các đoạn.</li>
+</ul>
+
+
+    <!-- HTML Styles -->
+<h2>5. HTML Styles</h2>
+
+<p>Thẻ <code>&lt;style&gt;</code> cho phép bạn thêm CSS trực tiếp vào một tài liệu HTML để định dạng nội dung. CSS (Cascading Style Sheets) là ngôn ngữ được sử dụng để mô tả cách trình bày của các tài liệu HTML, bao gồm màu sắc, phông chữ, khoảng cách, và nhiều thuộc tính khác. Thẻ <code>&lt;style&gt;</code> được đặt trong phần <code>&lt;head&gt;</code> của tài liệu HTML và có thể chứa nhiều quy tắc CSS để áp dụng cho toàn bộ trang.</p>
+
+<p>Bạn cũng có thể sử dụng thuộc tính <code>style</code> trong các thẻ HTML để áp dụng các kiểu đơn giản trực tiếp cho từng phần tử. Đây là cách nhanh chóng để thay đổi kiểu dáng của một phần tử cụ thể mà không cần phải sử dụng thẻ <code>&lt;style&gt;</code> hoặc file CSS riêng.</p>
+
+<p>Ví dụ minh họa:</p>
+
+<pre><code>
+&lt;style&gt;
+    h1 {
+        color: red; /* Đặt màu chữ của tiêu đề h1 là đỏ */
+        text-align: center; /* Căn giữa tiêu đề h1 */
+    }
+    p {
+        font-size: 16px; /* Đặt kích thước chữ của các đoạn văn là 16px */
+        line-height: 1.5; /* Tăng khoảng cách giữa các dòng trong đoạn văn */
+    }
+&lt;/style&gt;
+
+&lt;h1&gt;Tiêu đề lớn màu đỏ&lt;/h1&gt;
+
+&lt;p style="color: blue; font-style: italic;"&gt;Đoạn văn này có màu xanh dương và chữ nghiêng.&lt;/p&gt;
+&lt;p&gt;Đoạn văn này sẽ sử dụng kiểu chữ và màu sắc mặc định từ các quy tắc CSS trong thẻ &lt;style&gt;.&lt;/p&gt;
+</code></pre>
+
+<p>Ví dụ:</p>
+
+<pre><code>
+&lt;style&gt;
+    h1 {
+        color: red; /* Đặt màu chữ của tiêu đề h1 là đỏ */
+        text-align: center; /* Căn giữa tiêu đề h1 */
+    }
+    p {
+        font-size: 16px; /* Đặt kích thước chữ của các đoạn văn là 16px */
+        line-height: 1.5; /* Tăng khoảng cách giữa các dòng trong đoạn văn */
+    }
+    .highlight {
+        background-color: yellow; /* Đặt màu nền cho phần tử có class "highlight" là vàng */
+        font-weight: bold; /* Đặt chữ cho phần tử có class "highlight" thành đậm */
+    }
+&lt;/style&gt;
+
+&lt;h1&gt;Tiêu đề lớn màu đỏ&lt;/h1&gt;
+
+&lt;p&gt;Đoạn văn này có màu sắc và kích thước chữ mặc định từ các quy tắc CSS trong thẻ &lt;style&gt;.&lt;/p&gt;
+
+&lt;p class="highlight"&gt;Đoạn văn này có nền vàng và chữ đậm nhờ class "highlight".&lt;/p&gt;
+
+&lt;p style="color: blue; font-style: italic;"&gt;Đoạn văn này có màu xanh dương và chữ nghiêng nhờ thuộc tính style trực tiếp.&lt;/p&gt;
+</code></pre>
+
+<p>Trong ví dụ trên:</p>
+<ul>
+    <li>Thẻ <code>&lt;style&gt;</code> định nghĩa các quy tắc CSS cho các phần tử HTML. Các tiêu đề <code>&lt;h1&gt;</code> sẽ có màu đỏ và được căn giữa, trong khi các đoạn văn <code>&lt;p&gt;</code> sẽ có kích thước chữ là 16px và khoảng cách giữa các dòng là 1.5.</li>
+    <li>Class <code>highlight</code> được định nghĩa trong thẻ <code>&lt;style&gt;</code> để áp dụng nền vàng và chữ đậm cho các phần tử có class này.</li>
+    <li>Thuộc tính <code>style</code> trong thẻ <code>&lt;p&gt;</code> áp dụng màu xanh dương và chữ nghiêng cho đoạn văn cụ thể, không phụ thuộc vào các quy tắc trong thẻ <code>&lt;style&gt;</code>.</li>
+</ul>
+
+<p>Việc sử dụng thẻ <code>&lt;style&gt;</code> cho phép bạn tổ chức các kiểu dáng cho nhiều phần tử và tạo sự đồng nhất trong thiết kế, trong khi thuộc tính <code>style</code> có thể được sử dụng cho các kiểu dáng cụ thể và nhanh chóng.</p>
+
+
+   <!-- HTML Links -->
+<h2>6. HTML Links</h2>
+
+<p>Thẻ <code>&lt;a&gt;</code> được sử dụng để tạo các liên kết trong HTML. Thuộc tính <code>href</code> chỉ định URL mà liên kết trỏ tới. Bạn có thể sử dụng các thuộc tính khác như <code>target</code> để điều khiển cách liên kết mở ra.</p>
+
+<p>Ví dụ minh họa:</p>
+
+<pre><code>
+&lt;a href="https://www.facebook.com/" target="_blank"&gt;Truy cập Facebook.com&lt;/a&gt;
+
+&lt;a href="https://www.google.com/" title="Truy cập Google"&gt;Tìm kiếm trên Google&lt;/a&gt;
+
+&lt;a href="#contact"&gt;Đi tới phần Liên Hệ&lt;/a&gt;
+</code></pre>
+
+<p>Giải thích:</p>
+<ul>
+    <li><code>&lt;a href="https://www.facebook.com/" target="_blank"&gt;Truy cập Facebook.com&lt;/a&gt;</code>: Tạo liên kết tới trang Facebook. Thuộc tính <code>target="_blank"</code> đảm bảo liên kết sẽ mở trong một tab mới.</li>
+    <li><code>&lt;a href="https://www.google.com/" title="Truy cập Google"&gt;Tìm kiếm trên Google&lt;/a&gt;</code>: Tạo liên kết tới trang Google. Thuộc tính <code>title</code> cung cấp thông tin gợi ý khi di chuột qua liên kết.</li>
+    <li><code>&lt;a href="#contact"&gt;Đi tới phần Liên Hệ&lt;/a&gt;</code>: Tạo liên kết điều hướng đến một phần cụ thể trên cùng trang web. Trong trường hợp này, liên kết sẽ chuyển đến phần có <code>id="contact"</code>.</li>
+</ul>
+
+<p>Trong ví dụ trên:</p>
+<ul>
+    <li>Liên kết đầu tiên mở Facebook trong một tab mới.</li>
+    <li>Liên kết thứ hai mở Google và cung cấp một tiêu đề gợi ý.</li>
+    <li>Liên kết cuối cùng điều hướng đến một phần cụ thể của trang hiện tại.</li>
+</ul>
+
+<p>Thẻ <code>&lt;a&gt;</code> là công cụ quan trọng trong HTML để tạo các liên kết giữa các trang web hoặc các phần trong cùng một trang, giúp cải thiện điều hướng và kết nối nội dung.</p>
+
+    <!-- HTML Images -->
+    <h2>7. HTML Images</h2>
+    <p>Thẻ <code>&lt;img&gt;</code> được sử dụng để chèn hình ảnh vào trang web. Thuộc tính <code>src</code> chỉ định đường dẫn tới hình ảnh, và <code>alt</code> cung cấp mô tả thay thế nếu hình ảnh không tải được.</p>
+    
+    <p>Ví dụ 1: Chèn hình ảnh từ URL với mô tả thay thế và kích thước:</p>
+    <pre><code>
+&lt;img src="https://th.bing.com/th/id/OIP.gAQCvOE5NK2jJ5KYWXgUNwHaGB?rs=1&pid=ImgDetMain" alt="Hình ảnh minh họa" width="300"&gt;
+    </code></pre>
+    <img src="https://th.bing.com/th/id/OIP.gAQCvOE5NK2jJ5KYWXgUNwHaGB?rs=1&pid=ImgDetMain" alt="Hình ảnh minh họa" width="300">
+
+    <p>Ví dụ 2: Chèn hình ảnh với thuộc tính <code>width</code> và <code>height</code>:</p>
+    <pre><code>
+&lt;img src="https://staticg.sportskeeda.com/editor/2022/09/17b8e-16635957088029-1920.jpg" alt="Ảnh minh họa với kích thước cụ thể" width="400" height="300"&gt;
+    </code></pre>
+    <img src="https://staticg.sportskeeda.com/editor/2022/09/17b8e-16635957088029-1920.jpg" alt="Ảnh minh họa với kích thước cụ thể" width="400" height="300">
+
+    <p>Ví dụ 3: Chèn hình ảnh với thuộc tính <code>title</code>:</p>
+    <pre><code>
+&lt;img src="https://th.bing.com/th/id/OIP.SVINlM-Zi_d1pfZJPn6qKAHaGB?rs=1&pid=ImgDetMain" alt="Logo" title="Đây là logo của tôi"&gt;
+    </code></pre>
+    <img src="https://th.bing.com/th/id/OIP.SVINlM-Zi_d1pfZJPn6qKAHaGB?rs=1&pid=ImgDetMain" alt="Logo" title="Đây là logo của tôi">
+</body>
+</html>
+
+    <!-- HTML Tables -->
+    <h2>8. HTML Tables</h2>
+    <p>Thẻ <code>&lt;table&gt;</code> được sử dụng để tạo bảng trong HTML. Các thẻ <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, và <code>&lt;td&gt;</code> lần lượt đại diện cho dòng, tiêu đề cột, và ô dữ liệu trong bảng.</p>
+    <p>Ví dụ:</p>
+    <pre><code>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Tên&lt;/th&gt;
+        &lt;th&gt;Tuổi&lt;/th&gt;
+        &lt;th&gt;Mã sinh viên&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Lê Trung Hiếu&lt;/td&gt;
+        &lt;td&gt;19&lt;/td&gt;
+        &lt;td&gt;22300725&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Nguyễn Gia Bách&lt;/td&gt;
+        &lt;td&gt;19&lt;/td&gt;
+        &lt;td&gt;223001694&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </code></pre>
+
+    <!-- HTML Lists -->
+    <h2>9. HTML Lists</h2>
+    <p>HTML hỗ trợ hai loại danh sách: danh sách có thứ tự (sử dụng thẻ <code>&lt;ol&gt;</code>) và danh sách không thứ tự (sử dụng thẻ <code>&lt;ul&gt;</code>), mỗi mục trong danh sách được đại diện bởi thẻ <code>&lt;li&gt;</code>.</p>
+    <p>Ví dụ:</p>
+    <pre><code>
+&lt;h3&gt;Danh sách có thứ tự:&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;Kê khai thông tin&lt;/li&gt;
+    &lt;li&gt;Soạn thảo thông tin&lt;/li&gt;
+    &lt;li&gt;Hoàn thành thông tin&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Danh sách không thứ tự:&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Đỗ&lt;/li&gt;
+    &lt;li&gt;Trượt&lt;/li&gt;
+    &lt;li&gt;Xem xét&lt;/li&gt;
+&lt;/ul&gt;
+    </code></pre>
+
+    <!-- HTML Block & Inline -->
+    <h2>10. HTML Block & Inline</h2>
+    <p>Các thẻ HTML có thể là block hoặc inline. Thẻ block chiếm toàn bộ chiều ngang của trang (ví dụ: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>), còn thẻ inline chỉ chiếm không gian cần thiết cho nội dung (ví dụ: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>).</p>
+    <p>Ví dụ:</p>
+    
+    <!-- Thẻ block -->
+    <div class="block-example">
+        Đây là một thẻ block chính hiệu. Thẻ block này chiếm toàn bộ chiều ngang của trang và bắt đầu trên một dòng mới.
+
+        <!-- Thẻ inline bên trong thẻ block -->
+        <span class="inline-example">Và đây là một thẻ inline bên trong nó.</span> 
+        Thẻ inline này chỉ chiếm không gian cần thiết cho nội dung của nó và không bắt đầu trên một dòng mới.
+    </div>
+    
+    <p>Thêm một ví dụ minh họa khác:</p>
+    
+    <div class="example-container">
+        <p>Thẻ <code>&lt;p&gt;</code> là thẻ block, bắt đầu trên một dòng mới và chiếm toàn bộ chiều ngang. Ví dụ:</p>
+        <p>Đây là một đoạn văn bản nằm trong thẻ <code>&lt;p&gt;</code>. Nó bắt đầu trên một dòng mới và có chiều rộng đầy đủ của trang.</p>
+        
+        <p>Thẻ <code>&lt;span&gt;</code> là thẻ inline, không bắt đầu trên một dòng mới và chỉ chiếm không gian cần thiết:</p>
+        <p>Đây là một đoạn văn bản với <span class="inline-example">thẻ inline</span> nằm trong nó. <span class="inline-example">Thẻ inline</span> không làm ngắt dòng văn bản.</p>
+    </div>
+</body>
+</html>
